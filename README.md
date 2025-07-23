@@ -47,7 +47,7 @@ This project focuses on detecting cyberbullying in Spanish social media using a 
  
 6. Usage Instructions
 
- 1. Install dependencies:
+Install dependencies:
 bash
 pip install -r requirements.txt
 Prepare dataset:
