@@ -1,18 +1,18 @@
 README: Transformer-Based Cyberbullying Detection: A RoBERTa Fine-Tuning Approach for Spanish Social Media
 
 1. Reproducibility
+
 This repository contains all scripts required to train, validate, and evaluate a RoBERTa-based model for cyberbullying detection in Spanish-language social media posts using stratified 5-fold cross-validation.
 Full model checkpoints, per-epoch logs, and configuration files are saved for each fold. The training pipeline is deterministic with manual seeds for reproducibility.
 2. Title
-Transformer-Based Cyberbullying Detection: A RoBERTa Fine-Tuning Approach for Spanish Social Media3. Description
+Transformer-Based Cyberbullying Detection: A RoBERTa Fine-Tuning Approach for Spanish Social Media
+3. Description
 This project focuses on detecting cyberbullying in Spanish social media using a transformer-based (RoBERTa) model. It addresses:
-
 
 + Class imbalance via data augmentation and weighted loss
 + Generalization using stratified K-fold cross-validation
-+Model robustness through early stopping and macro-averaged metrics (F1, accuracy)
++ Model robustness through early stopping and macro-averaged metrics (F1, accuracy)
 4. Dataset Information
-
 
 Name: augmented_dataset.csv
 Source: Hugging Face dataset: manueltonneau/spanish-hate-speech-superset
