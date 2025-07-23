@@ -26,24 +26,24 @@ This project focuses on detecting cyberbullying in Spanish social media using a 
   + 0: No Cyberbullying
   + 1: Cyberbullying
 + Distribution:
-++ Before augmentation: 19,438 (no), 4,947 (yes)
-++ After augmentation: 22,590 (no), 9,444 (yes)
+  + Before augmentation: 19,438 (no), 4,947 (yes)
+  + After augmentation: 22,590 (no), 9,444 (yes)
 + Total Samples: 32,034
 
 5. Code Information
 
 + Language: Python 3.9+
 + Key Libraries:
-++ transformers, datasets (Hugging Face)
-++ scikit-learn (metrics and k-fold splitting)
-++ pandas, numpy, torch
+  + transformers, datasets (Hugging Face)
+  + scikit-learn (metrics and k-fold splitting)
+  + pandas, numpy, torch
 + Inputs:
-++ CSV file with columns: text, labels
-++ Tokenized dataset saved as Hugging Face Dataset object
+  + CSV file with columns: text, labels
+  + Tokenized dataset saved as Hugging Face Dataset object
 + Outputs:
-++ Model checkpoints per fold
-++ Logs of validation accuracy/loss/F1 for each epoch per fold
-++ Final aggregated performance metrics
+  + Model checkpoints per fold
+  + Logs of validation accuracy/loss/F1 for each epoch per fold
+  + Final aggregated performance metrics
  
 6. Usage Instructions
 
@@ -59,9 +59,9 @@ Run training script:
 bash
 python run_cyberbullying_cv.py
 Outputs:
-Logs: epoch_log_foldX.txt
-Models: best_model_foldX/
-Final metrics printed to console
++ Logs: epoch_log_foldX.txt
++ Models: best_model_foldX/
++ Final metrics printed to console
 
 7. Requirements
 
@@ -77,12 +77,12 @@ Final metrics printed to console
 + Model: PlanTL-GOB-ES/roberta-base-bne, fine-tuned with a binary classifier head
 + Splitting: 5-fold stratified cross-validation
 + Training:
-Optimizer: Adam
-Weighted loss: class weights computed via compute_class_weight
-Early stopping: patience = 10
+  + Optimizer: Adam
+  + Weighted loss: class weights computed via compute_class_weight
+  + Early stopping: patience = 10
 + Metrics:
-Validation Accuracy
-Macro F1-Score
+  + Validation Accuracy
+  + Macro F1-Score
 + Loss Function: Custom weighted cross-entropy
 
 9. Citations (If Applicable)
@@ -111,8 +111,8 @@ text
 + OS: Ubuntu 20.04 / Windows 10
 + Hardware: NVIDIA RTX 3080 / 3090 (8–24GB VRAM recommended), or Google Colab Pro
 + Environment:
-Python 3.9
-CUDA 11.8 (if using GPU)
+  + Python 3.9
+  + CUDA 11.8 (if using GPU)
 + Training Time: 2–4 hours per fold on a single GPU
 
 12. Conclusions
