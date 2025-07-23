@@ -23,8 +23,8 @@ This project focuses on detecting cyberbullying in Spanish social media using a 
 + Source: Hugging Face dataset: manueltonneau/spanish-hate-speech-superset
 + Languages: Spanish (Iberian and Latin American)
 + Classes:
- + 0: No Cyberbullying
- + 1: Cyberbullying
+ - 0: No Cyberbullying
+ - 1: Cyberbullying
 + Distribution:
 ++ Before augmentation: 19,438 (no), 4,947 (yes)
 ++ After augmentation: 22,590 (no), 9,444 (yes)
