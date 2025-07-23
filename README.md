@@ -50,14 +50,18 @@ This project focuses on detecting cyberbullying in Spanish social media using a 
 Install dependencies:
 bash
 pip install -r requirements.txt
+
 Prepare dataset:
 Ensure augmented_dataset.csv exists with text and labels columns.
+
 (Optional) Tokenize and save using Hugging Face Datasets:
 python
 tokenized_dataset.save_to_disk("tokenized_dataset")
+
 Run training script:
 bash
 python run_cyberbullying_cv.py
+
 Outputs:
 + Logs: epoch_log_foldX.txt
 + Models: best_model_foldX/
