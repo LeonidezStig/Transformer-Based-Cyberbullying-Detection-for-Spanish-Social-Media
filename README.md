@@ -123,7 +123,7 @@ text
 
 + Generalization: The model demonstrates consistent macro F1/accuracy across folds.
 + Data Augmentation: Class augmentation significantly improved balance and learning.
-+ Bias Awareness: Explicit mention of possible cultural and annotation bias.
++ + Bias Awareness: Explicit mention of possible cultural and annotation bias.
 + Modularity: The system is modular, supporting hyperparameter optimization and model upgrades (e.g., multilingual RoBERTa).
 
 Limitations
@@ -132,3 +132,14 @@ Limitations
 + Generalizability: Model trained on Twitter/Reddit; may not generalize to WhatsApp or TikTok.
 + Explainability: While effective, model decisions are not yet interpretable in a human-readable sense.
 + Fold 3 Exception: If excluded (due to logging error), document as noted in manuscript.
+
+
+ 
+
+How to use integrating linguistic features:
+
++ Prepare a batch of raw text sentences.
++ Pass the batch as a list of strings to the model.
++ The model handles tokenization, POS extraction, embedding concatenation, and outputs logits. 
+
+You can then apply a loss function (nn.CrossEntropyLoss) and optimize as usual. 
